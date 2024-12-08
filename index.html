@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: '돋음';
+            font-size: 14px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* 전체 화면을 차지하도록 설정 */
+        }
+
+        .background {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        header {
+            height: 90px;
+            border-bottom: solid 1px #ccccccd9;
+            padding: 0 75px;
+        }
+
+        .logo {
+            float: left;
+            margin-top: 20px;
+        }
+
+        .menus {
+            float: right;
+        }
+
+        .main_menu {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-size: 18px;
+            color: rgb(255, 255, 255);
+        }
+
+        .main_menu li {
+            display: inline;
+            margin-left: 35px;
+        }
+
+        .contents {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 670px;
+            text-align: center;
+            color: #fff;
+        }
+
+        footer {
+            background-color: #0e0e0e;
+            padding: 35px 0;
+            text-align: center;
+            color: #484848;
+            font-size: 12px;
+        }
+
+        .address {
+            line-height: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        a:hover {
+            color: rgb(0, 119, 255);
+        }
+
+        .bold3 {
+            font-size: 70px;
+            font-weight: bold;
+        }
+
+        .bold2 {
+            font-size: 18px;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="background">
+        <video autoplay loop muted>
+            <source src="./img/www.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <header>
+        <div class="logo">
+            <a href="./index.html"><img src="./img/로고2.png" width="80px"></a>
+        </div>
+        <nav class="menus">
+            <ul class="main_menu">
+                <li><a href="./A1.html">양육경험담</a></li>
+                <li><a href="./A2.html">용품후기</a></li>
+                <li><a href="./A3.html">물생활용어</a></li>
+                <li><a href="./A4.html">필수템추천</a></li>
+                <li><a href="./A5.html">물생활사이트</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contents">
+        <p class="bold3">슬기로운 물생활</p><br><br>
+        <p class="bold2">내 어항에 물고기가 입주하는 순간부터 시작되는 물생활!</p>
+        <p class="bold2">힐링인줄 알았지만 실상은 고난뿐인 물린이들을 구원해줄 물생활 3년차의 경험담</p>
+    </section>
+
+    <footer>
+            <ul class="address">
+                <li>경기도 광명시 모모동 5454번지 우)54545</li>
+                <li>TEL:515-2151-2115 Email:dfdfm@gmail.com</li>
+                <li>COPYRIGHT (c) 슬기로운 물생활 ALL RIGHTS RESERVED</li>
+            </ul>
+    </footer>
+</body>
+
+</html>
